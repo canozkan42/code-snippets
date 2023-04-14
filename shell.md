@@ -1,4 +1,4 @@
-### `cat filename`
+### `cat filename` 
 
 **cat** command is a shell command that is short for "concatenate". It is used to display the contents of one or more files on the terminal. You can also combine multiple files into a single file using "cat" and redirecting the output to a new file. For example, to combine the contents of two files into a new file named "combined.txt", you can run the following command:
 ```bash
