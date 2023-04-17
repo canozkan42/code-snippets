@@ -6,6 +6,15 @@ Downloads a copy of a remote repository to your local machine. This command is u
 
 Initializes a new Git repository in the current directory. This command creates a new .git subdirectory that contains all the necessary files for Git to track changes in your project.
 
+### `git remote` 
+
+Shows the remote repositories that are associated with the current repository. This command is used to manage connections to remote repositories, such as adding or removing a remote repository. Common way to use is:
+
+```
+git remote add origin https://github.com/you/your-project
+```
+which will connect the local directory with the repo made at Github.
+
 ### `git status` 
 
 Shows the current status of the repository, including any changes that have been made, files that have been added to the staging area, and files that have been modified but not yet staged.
@@ -35,7 +44,11 @@ Shows a log of all the commits in the repository. This command is used to view t
 
 ### `git pull` 
 
-Downloads changes from a remote repository and merges them with the local repository. This command is typically used to update the local repository with changes made by others.
+Downloads changes from a remote repository and merges them with the local repository. This command is typically used to update the local repository with changes made by others. Common way to use it is:
+
+```
+git pull origin master
+```
 
 ### `git branch` 
 
