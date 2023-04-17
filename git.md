@@ -79,6 +79,21 @@ git reset HEAD~1
 ```
 Or to go back before a certain commit, put hex number of that commit instead of `HEAD~1`.
 
+### ```git restore```
+
+Restores files in the working directory to the state they were in at a previous commit. This command is useful if you want to discard changes made to a file or directory and restore it to its previous state. Common way to use it is:
+
+```
+git restore <filename or directoryname> <commit ID>
+```
+
+By default, `git restore` only affects the working directory, meaning that changes to the file or directory in the staging area or repository will not be affected. However, you can use the `--staged` option to restore changes in the staging area as well.
+
+For example, to restore changes in the staging area and the working directory to the last committed state, you can use the following command:
+
+```git restore --staged <filename or directoryname>```
+
+It’s important to understand that `git restore <file>` is a dangerous command. ***Any local changes you made to that file are gone*** — Git just replaced that file with the last staged or committed version. Don’t ever use this command unless you absolutely know that you don’t want those unsaved local changes.
 
 
 
